@@ -1,0 +1,185 @@
+
+body{
+    margin:0;
+    padding:0;
+     background: url(images/bg-pattern-desktop.svg) no-repeat;
+     background-size:60% ;
+     font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+main{
+    display: grid;
+    padding-left:93px;
+   
+    
+}
+
+.logo{
+    padding-top: 63px;
+    margin-bottom: 92px;
+}
+
+.hero_image{
+    max-height: 100%;
+    grid-row: 1/span 3;
+    grid-column: 2;
+    justify-self: end;
+}
+
+h1{
+    font-size: 568.75%;
+    max-width: 625%;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top:2px;
+    margin-bottom: 2px;
+}
+
+.first_heading{
+    font-weight: 200;
+    color:hsl(0, 36%, 70%)
+}
+
+p{
+    font-size: 16px;
+    max-width: 443px;
+    line-height: 2;
+    margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+
+}
+
+input{
+    font-size: 27px;
+    width: 54%;
+    height: 45px;
+    border-radius: 30px;
+    color: hsl(0, 36%, 70%);
+    border:2px solid hsl(0, 36%, 70%);
+    opacity: 70%;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    bottom:4px;
+    left: 20px;
+
+}
+
+input:focus{
+    border: none;
+}
+
+.error{
+    position: relative;
+    right: 15%;
+    top: 3px;
+}
+
+button{
+    width: 16%;
+    height: 51px;
+    border-radius: 30px;
+    position: relative;
+    right: 69px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+}
+
+.error_message{
+    color:hsl(0, 93%, 68%);
+    margin: 0;
+    padding-left:12px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+
+@media (max-width:1292px){
+    main{
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 1fr 33% 10%;
+        padding-right: 93px;
+    }
+
+    .logo{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero_image{
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 41px;
+        margin-bottom: 5%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .text{
+        grid-row: 3;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text p{
+        align-self: center;
+    }
+
+    .email-input{
+        padding-left:10%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    input{
+        width: 42%;
+    }
+
+    
+}
+
+
+@media (max-width:830px){
+    main{
+        padding: 0;
+    }
+
+    input{
+        width: 70%;
+    }
+
+    h1{
+        margin-top: 0;
+        font-size: 400%;
+    }
+
+    button{
+        width: 16.8%;
+    }
+
+    .text p{
+        max-width:74%;
+    }
+
+   
+}
+
